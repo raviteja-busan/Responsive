@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(45deg,rgb(230, 173, 185),rgb(144, 216, 238)) fixed;
+            padding: 50px;
+        }
+      .mainn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        }
+      .it {
+        height: 400px;
+        width: 250px;
+        position: relative;
+        background: bisque;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        padding: 20px;
+        transition: all .3s ease-in;
+        /* overflow: scroll; */
+      }
+      .it > *{
+        padding: 10px;
+      }
+      .it .ci{
+        height: 150px;
+        width: 150px;
+        border: 5px double #022a3c;
+        border-radius: 50%;
+        background-position: center center;
+        background-size: cover;
+      }
+      .it .ct{
+        padding: 20px 10px;
+        font-size: 1.5rem;
+        text-shadow: 1px 0px 2px #262654;
+      }
+      .it:nth-child(1) .ci{
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mahindra_Thar_Photoshoot_At_Perupalem_Beach_%28West_Godavari_District%2CAP%2CIndia_%29_Djdavid.jpg/420px-Mahindra_Thar_Photoshoot_At_Perupalem_Beach_%28West_Godavari_District%2CAP%2CIndia_%29_Djdavid.jpg);
+      }
+      .it:nth-child(2) .ci{
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rockcrawling.JPG/330px-Rockcrawling.JPG);
+      }
+      .it:nth-child(3) .ci{
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/2019_Suzuki_Jimny_SZ5_4X4_Automatic_1.5.jpg/420px-2019_Suzuki_Jimny_SZ5_4X4_Automatic_1.5.jpg);
+      }
+      .it:hover{
+        background: #2c22273b;
+        box-shadow: 0px 0px 11px 5px #000000;
+      }
+      .it .cx{
+        line-height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainn">
+      <div class="it">
+        <div class="ci "></div>
+        <div class="ct">Thar</div>
+        <div class="cx">
+            The Thar was designed to be a rugged, reliable, and affordable off-road vehicle that could handle the rough terrain found in many parts of India.
+        </div>
+      </div>
+      <div class="it">
+        <div class="ci "></div>
+        <div class="ct">Jeep</div>
+        <div class="cx">
+            The Jeep® Compass has two available 4x4 systems that can take on almost any weather condition.        </div>
+      </div>
+      <div class="it">
+        <div class="ci "></div>
+        <div class="ct">Suzuki Jimny</div>
+        <div class="cx">
+            The Maruti Suzuki Jimny is a four-seater SUV. Outside, it gets a five-slot vertical grille </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
